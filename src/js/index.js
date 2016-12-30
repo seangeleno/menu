@@ -1,8 +1,4 @@
-const lowers = ["alex", "george", "bonnie", "maria", "ellie"];
-const uppers = lowers.map(name => name.toUpperCase());
-uppers.forEach(name => console.log(`Hello, ${name}`));
+import app from './components/app';
 
-
-const ages = [555, 30, 749, 989, 3, 44];
-const addOne = ages.sort().map(age => age);
-ages.forEach(age => console.log(`${age + 1}`));
+const body = document.querySelector('body');
+body.insertBefore(app(), body.childNodes[0]);
